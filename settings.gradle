@@ -7,8 +7,6 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.ALLOW_PROJECT_REPOS)
-
     repositories {
         google()
         mavenCentral()
