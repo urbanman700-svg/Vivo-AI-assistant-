@@ -1,0 +1,32 @@
+// Top-level build file for Vivo Assistant
+// Codex KD Official
+
+buildscript {
+    ext {
+        kotlin_version = "1.9.22"
+        gradle_version = "8.2.2"
+        compose_version = "1.5.4"
+    }
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.google.gms:google-services:4.4.0"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

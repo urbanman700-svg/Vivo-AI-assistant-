@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/nav_dashboard"
+        android:contentDescription="Dashboard" />
+
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_nav_chat"
+        android:title="@string/nav_chat"
+        android:contentDescription="AI Chat" />
+
+    <!-- Center FAB placeholder — no item here, FAB floats above -->
+
+    <item
+        android:id="@+id/routinesFragment"
+        android:icon="@drawable/ic_nav_routines"
+        android:title="@string/nav_routines"
+        android:contentDescription="Routines" />
+
+    <item
+        android:id="@+id/settingsActivity"
+        android:icon="@drawable/ic_nav_settings"
+        android:title="@string/nav_settings"
+        android:contentDescription="Settings" />
+
+</menu>

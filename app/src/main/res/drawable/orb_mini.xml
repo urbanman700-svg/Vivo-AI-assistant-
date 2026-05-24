@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- orb_mini.xml — Small 28dp avatar orb for chat -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Glow -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#2200D4FF" />
+        </shape>
+    </item>
+
+    <!-- Body -->
+    <item
+        android:top="3dp"
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="100%"
+                android:centerX="0.3"
+                android:centerY="0.3"
+                android:startColor="#BB00D4FF"
+                android:endColor="#BB050A12" />
+        </shape>
+    </item>
+
+</layer-list>

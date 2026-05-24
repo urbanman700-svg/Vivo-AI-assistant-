@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Vivo Assistant</string>
+    <string name="app_tagline">Your Futuristic AI Companion</string>
+    <string name="app_version">v1.0.0</string>
+    <string name="codex_kd">Codex KD Official</string>
+
+    <!-- Service labels (shown in Android Settings) -->
+    <string name="accessibility_service_label">Vivo Assistant Automation</string>
+    <string name="accessibility_service_description">
+        Vivo Assistant uses Accessibility Service to automate app interactions,
+        navigate screens, type text, and control Android on your command.
+        All automation happens through visible UI only — no hidden access.
+    </string>
+    <string name="notification_service_label">Vivo Notification Intelligence</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Home</string>
+    <string name="nav_chat">AI Chat</string>
+    <string name="nav_routines">Routines</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_night">Good night</string>
+    <string name="dashboard_subtitle">What can I help you with?</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="smart_routines">Smart Routines</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="ai_status_ready">● AI Ready</string>
+    <string name="ai_status_offline">● AI Offline</string>
+    <string name="ai_status_thinking">● Thinking…</string>
+
+    <!-- Chat -->
+    <string name="chat_hint">Message Vivo…</string>
+    <string name="chat_placeholder_title">Start a conversation</string>
+    <string name="chat_placeholder_subtitle">Ask anything, give a command, or say "start gaming mode"</string>
+    <string name="chat_error_no_api_key">API key not set. Go to Settings → AI Configuration.</string>
+    <string name="chat_error_offline">You\'re offline. AI chat requires internet.</string>
+    <string name="token_usage">%d tokens used</string>
+    <string name="clear_chat">Clear Chat</string>
+    <string name="clear_chat_confirm">Clear all messages?</string>
+    <string name="copied">Copied</string>
+
+    <!-- Voice -->
+    <string name="voice_listening">Listening…</string>
+    <string name="voice_thinking">Thinking…</string>
+    <string name="voice_error_mic">Microphone permission needed</string>
+    <string name="voice_error_network">Network error — check connection</string>
+    <string name="voice_tap_to_speak">Tap mic to speak</string>
+    <string name="voice_session_active">Session active</string>
+
+    <!-- Routines -->
+    <string name="routine_gaming">Gaming Mode</string>
+    <string name="routine_study">Study Mode</string>
+    <string name="routine_sleep">Sleep Mode</string>
+    <string name="routine_morning">Morning Mode</string>
+    <string name="routine_work">Work Mode</string>
+    <string name="routine_activate">Activate</string>
+    <string name="routine_last_used">Last used: %s</string>
+    <string name="routine_never_used">Never used</string>
+    <string name="routine_custom">Custom Routine</string>
+    <string name="routine_create">Create Routine</string>
+    <string name="routine_activated">%s activated</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_ai_config">AI Configuration</string>
+    <string name="settings_api_key">API Key</string>
+    <string name="settings_api_key_hint">sk-or-xxxxxxxxxxxxxxxx</string>
+    <string name="settings_api_key_desc">Get free key at openrouter.ai</string>
+    <string name="settings_ai_model">AI Model</string>
+    <string name="settings_personality">AI Personality</string>
+    <string name="settings_voice">Voice Settings</string>
+    <string name="settings_voice_speed">Speaking Speed</string>
+    <string name="settings_voice_pitch">Voice Pitch</string>
+    <string name="settings_voice_language">Language</string>
+    <string name="settings_overlay">Overlay</string>
+    <string name="settings_overlay_enabled">Enable Floating Orb</string>
+    <string name="settings_overlay_side">Orb Position</string>
+    <string name="settings_ui">Interface</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_haptic">Haptic Feedback</string>
+    <string name="settings_sound">Sound Effects</string>
+    <string name="settings_system">System</string>
+    <string name="settings_boot_start">Auto-start on Boot</string>
+    <string name="settings_notif_ai">AI Notification Summary</string>
+    <string name="settings_permissions">Permissions</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_saved">Settings saved</string>
+
+    <!-- Permissions -->
+    <string name="perm_title">Setup Permissions</string>
+    <string name="perm_subtitle">Vivo needs these to work properly</string>
+    <string name="perm_required">Required</string>
+    <string name="perm_optional">Optional</string>
+    <string name="perm_grant">Grant</string>
+    <string name="perm_granted">✓ Granted</string>
+    <string name="perm_microphone">Microphone</string>
+    <string name="perm_microphone_desc">For voice commands</string>
+    <string name="perm_overlay">Display Over Apps</string>
+    <string name="perm_overlay_desc">For floating AI orb</string>
+    <string name="perm_accessibility">Accessibility Service</string>
+    <string name="perm_accessibility_desc">For app automation and control</string>
+    <string name="perm_notifications">Notifications</string>
+    <string name="perm_notifications_desc">To show assistant alerts</string>
+    <string name="perm_notif_listener">Notification Access</string>
+    <string name="perm_notif_listener_desc">For AI notification summaries</string>
+    <string name="perm_write_settings">Modify System Settings</string>
+    <string name="perm_write_settings_desc">To change brightness</string>
+    <string name="perm_dnd">Do Not Disturb</string>
+    <string name="perm_dnd_desc">For sleep and gaming modes</string>
+    <string name="perm_done">All set!</string>
+    <string name="perm_skip">Skip for now</string>
+    <string name="perm_continue">Continue</string>
+
+    <!-- Automation confirmations -->
+    <string name="action_opening">Opening %s</string>
+    <string name="action_brightness_set">Brightness set to %d%%</string>
+    <string name="action_volume_set">Volume set to %d%%</string>
+    <string name="action_muted">Phone muted</string>
+    <string name="action_torch_on">Torch on</string>
+    <string name="action_torch_off">Torch off</string>
+    <string name="action_dnd_on">Do Not Disturb enabled</string>
+    <string name="action_dnd_off">DND disabled</string>
+    <string name="action_screenshot">Taking screenshot</string>
+    <string name="action_back">Going back</string>
+    <string name="action_home">Home screen</string>
+
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong. Try again.</string>
+    <string name="error_network">Network error. Check your connection.</string>
+    <string name="error_api_key">Invalid API key. Check Settings.</string>
+    <string name="error_no_app">App not found: %s</string>
+    <string name="error_permission">Permission needed: %s</string>
+    <string name="error_mic">Microphone error. Check permissions.</string>
+
+    <!-- Overlay -->
+    <string name="overlay_ask_placeholder">Ask me anything…</string>
+    <string name="overlay_listening">Listening…</string>
+    <string name="overlay_thinking">Thinking…</string>
+
+    <!-- Notification channels -->
+    <string name="channel_assistant_name">Vivo Assistant</string>
+    <string name="channel_assistant_desc">Shows when Vivo Assistant is active</string>
+    <string name="channel_alerts_name">Vivo Alerts</string>
+    <string name="channel_alerts_desc">Important alerts from Vivo</string>
+    <string name="channel_routines_name">Smart Routines</string>
+    <string name="channel_routines_desc">Notifications from scheduled routines</string>
+
+    <!-- Foreground notification -->
+    <string name="notif_service_title">Vivo Assistant</string>
+    <string name="notif_service_text">Ready — tap to open</string>
+    <string name="notif_stop">Stop</string>
+
+    <!-- AI personalities -->
+    <string name="personality_jarvis">Jarvis Mode</string>
+    <string name="personality_friendly">Friendly</string>
+    <string name="personality_calm">Calm</string>
+    <string name="personality_minimal">Minimal</string>
+    <string name="personality_pro">Professional</string>
+
+    <!-- Models display names -->
+    <string name="model_claude_haiku">Claude Haiku (Fast)</string>
+    <string name="model_gpt_mini">GPT-4o Mini</string>
+    <string name="model_gemini_flash">Gemini Flash</string>
+    <string name="model_claude_sonnet">Claude Sonnet (Best)</string>
+
+    <!-- Quick actions -->
+    <string name="qa_torch">Torch</string>
+    <string name="qa_dnd">DND</string>
+    <string name="qa_screenshot">Screenshot</string>
+    <string name="qa_brightness">Brightness</string>
+    <string name="qa_volume">Volume</string>
+    <string name="qa_notifications">Notifications</string>
+
+    <!-- Onboarding -->
+    <string name="onboard_welcome">Welcome to Vivo</string>
+    <string name="onboard_subtitle">Your AI-powered Android companion</string>
+    <string name="onboard_start">Get Started</string>
+
+</resources>

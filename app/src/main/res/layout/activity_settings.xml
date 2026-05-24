@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <!-- AI CONFIGURATION -->
+        <TextView style="@style/SettingsSectionHeader" android:text="AI Configuration" />
+
+        <androidx.cardview.widget.CardView style="@style/SettingsCard">
+            <LinearLayout style="@style/SettingsCardInner">
+
+                <TextView style="@style/SettingsLabel" android:text="API Key (OpenRouter)" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <EditText
+                        android:id="@+id/etApiKey"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_input_overlay"
+                        android:inputType="textPassword"
+                        android:hint="sk-or-xxxxxxxxxxxxxxxx"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="13sp"
+                        android:paddingHorizontal="14dp"
+                        android:singleLine="true" />
+                    <ImageButton
+                        android:id="@+id/btnToggleApiKey"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_visibility"
+                        android:background="@null"
+                        android:layout_marginStart="6dp"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get free key at openrouter.ai"
+                    android:textColor="@color/color_primary"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp" />
+
+                <View style="@style/Divider" />
+
+                <TextView style="@style/SettingsLabel" android:text="AI Model" />
+                <Spinner android:id="@+id/spinnerModel"
+                    android:layout_width="match_parent" android:layout_height="48dp"
+                    android:background="@drawable/bg_input_overlay" />
+
+                <View style="@style/Divider" />
+
+                <TextView style="@style/SettingsLabel" android:text="AI Personality" />
+                <Spinner android:id="@+id/spinnerPersonality"
+                    android:layout_width="match_parent" android:layout_height="48dp"
+                    android:background="@drawable/bg_input_overlay" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- VOICE SETTINGS -->
+        <TextView style="@style/SettingsSectionHeader" android:text="Voice Settings" />
+
+        <androidx.cardview.widget.CardView style="@style/SettingsCard">
+            <LinearLayout style="@style/SettingsCardInner">
+
+                <TextView style="@style/SettingsLabel" android:text="Language" />
+                <Spinner android:id="@+id/spinnerLanguage"
+                    android:layout_width="match_parent" android:layout_height="48dp"
+                    android:background="@drawable/bg_input_overlay" />
+
+                <View style="@style/Divider" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView style="@style/SettingsLabel"
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Speaking Speed" />
+                    <TextView android:id="@+id/tvVoiceSpeedValue"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/color_primary" android:textSize="13sp" />
+                </LinearLayout>
+                <SeekBar android:id="@+id/seekVoiceSpeed"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:max="20" android:progress="10"
+                    android:progressTint="@color/color_primary"
+                    android:thumbTint="@color/color_primary" />
+
+                <View style="@style/Divider" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView style="@style/SettingsLabel"
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Voice Pitch" />
+                    <TextView android:id="@+id/tvVoicePitchValue"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/color_primary" android:textSize="13sp" />
+                </LinearLayout>
+                <SeekBar android:id="@+id/seekVoicePitch"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:max="20" android:progress="10"
+                    android:progressTint="@color/color_primary"
+                    android:thumbTint="@color/color_primary" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- SYSTEM TOGGLES -->
+        <TextView style="@style/SettingsSectionHeader" android:text="System" />
+
+        <androidx.cardview.widget.CardView style="@style/SettingsCard">
+            <LinearLayout style="@style/SettingsCardInner">
+
+                <Switch android:id="@+id/switchOverlay"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Enable Floating Orb"
+                    android:textColor="@color/text_primary" android:textSize="14sp"
+                    android:thumbTint="@color/color_primary" android:trackTint="@color/bg_elevated" />
+
+                <View style="@style/Divider" />
+
+                <Switch android:id="@+id/switchBootStart"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Auto-start on Boot"
+                    android:textColor="@color/text_primary" android:textSize="14sp"
+                    android:thumbTint="@color/color_primary" android:trackTint="@color/bg_elevated" />
+
+                <View style="@style/Divider" />
+
+                <Switch android:id="@+id/switchNotifAI"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="AI Notification Summary"
+                    android:textColor="@color/text_primary" android:textSize="14sp"
+                    android:thumbTint="@color/color_primary" android:trackTint="@color/bg_elevated" />
+
+                <View style="@style/Divider" />
+
+                <Switch android:id="@+id/switchHaptic"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Haptic Feedback"
+                    android:textColor="@color/text_primary" android:textSize="14sp"
+                    android:thumbTint="@color/color_primary" android:trackTint="@color/bg_elevated" />
+
+                <View style="@style/Divider" />
+
+                <Switch android:id="@+id/switchSound"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Sound Effects"
+                    android:textColor="@color/text_primary" android:textSize="14sp"
+                    android:thumbTint="@color/color_primary" android:trackTint="@color/bg_elevated" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- PERMISSIONS -->
+        <TextView style="@style/SettingsSectionHeader" android:text="Permissions" />
+
+        <androidx.cardview.widget.CardView style="@style/SettingsCard">
+            <LinearLayout style="@style/SettingsCardInner">
+
+                <LinearLayout android:id="@+id/rowMicrophone" style="@style/PermRow">
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Microphone" android:textColor="@color/text_primary" android:textSize="13sp" />
+                    <Button android:id="@+id/btnGrantMic" style="@style/PermBtn" android:text="Grant" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/rowOverlayPerm" style="@style/PermRow">
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Display Over Apps" android:textColor="@color/text_primary" android:textSize="13sp" />
+                    <Button android:id="@+id/btnGrantOverlay" style="@style/PermBtn" android:text="Grant" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/rowAccessibility" style="@style/PermRow">
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Accessibility Service" android:textColor="@color/text_primary" android:textSize="13sp" />
+                    <Button android:id="@+id/btnGrantAccessibility" style="@style/PermBtn" android:text="Grant" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/rowNotifications" style="@style/PermRow">
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Notifications" android:textColor="@color/text_primary" android:textSize="13sp" />
+                    <Button android:id="@+id/btnGrantNotifications" style="@style/PermBtn" android:text="Grant" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/rowNotifListener" style="@style/PermRow">
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Notification Access" android:textColor="@color/text_primary" android:textSize="13sp" />
+                    <Button android:id="@+id/btnGrantNotifListener" style="@style/PermBtn" android:text="Grant" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/rowWriteSettings" style="@style/PermRow">
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Modify System Settings" android:textColor="@color/text_primary" android:textSize="13sp" />
+                    <Button android:id="@+id/btnGrantWriteSettings" style="@style/PermBtn" android:text="Grant" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/rowDND" style="@style/PermRow">
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Do Not Disturb" android:textColor="@color/text_primary" android:textSize="13sp" />
+                    <Button android:id="@+id/btnGrantDND" style="@style/PermBtn" android:text="Grant" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ABOUT -->
+        <TextView style="@style/SettingsSectionHeader" android:text="About" />
+
+        <androidx.cardview.widget.CardView style="@style/SettingsCard">
+            <LinearLayout style="@style/SettingsCardInner">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_weight="1"
+                        android:text="Version" android:textColor="@color/text_secondary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tvVersionValue"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary" android:textSize="13sp" />
+                </LinearLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Codex KD Official"
+                    android:textColor="@color/color_primary" android:textSize="12sp"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- SAVE -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Save Settings"
+            android:textColor="@color/bg_primary"
+            android:textSize="15sp"
+            android:backgroundTint="@color/color_primary"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:stateListAnimator="@null"
+            style="@style/Widget.Material3.Button" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

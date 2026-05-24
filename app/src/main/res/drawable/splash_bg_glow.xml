@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- splash_bg_glow.xml — Radial ambient glow behind orb -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:type="radial"
+        android:gradientRadius="50%"
+        android:startColor="#2200D4FF"
+        android:centerColor="#0F00AACC"
+        android:endColor="#00000000" />
+    <size android:width="400dp" android:height="400dp" />
+</shape>

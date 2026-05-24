@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ═══════════════════════════════════
+         PRIMARY BRAND COLORS
+         Futuristic cyan/blue neon palette
+    ═══════════════════════════════════ -->
+    <color name="color_primary">#00D4FF</color>
+    <color name="color_primary_light">#66E8FF</color>
+    <color name="color_primary_dark">#0099BB</color>
+    <color name="color_primary_alpha30">#4D00D4FF</color>
+    <color name="color_primary_alpha15">#2600D4FF</color>
+
+    <color name="color_secondary">#7B61FF</color>
+    <color name="color_secondary_light">#A899FF</color>
+    <color name="color_accent">#FF6B9D</color>
+
+    <!-- ═══════════════════════════════════
+         BACKGROUNDS (Dark UI)
+    ═══════════════════════════════════ -->
+    <color name="bg_primary">#080C14</color>
+    <color name="bg_secondary">#0D1320</color>
+    <color name="bg_surface">#111827</color>
+    <color name="bg_card">#141E2E</color>
+    <color name="bg_elevated">#1A2438</color>
+    <color name="bg_input">#1E2D42</color>
+    <color name="bg_splash">#050A12</color>
+
+    <!-- Glassmorphism overlay -->
+    <color name="bg_glass">#CC0D1320</color>
+    <color name="overlay_panel_bg">#E8111827</color>
+
+    <!-- ═══════════════════════════════════
+         TEXT COLORS
+    ═══════════════════════════════════ -->
+    <color name="text_primary">#F0F4FF</color>
+    <color name="text_secondary">#8896AB</color>
+    <color name="text_hint">#4A5568</color>
+    <color name="text_disabled">#2D3748</color>
+    <color name="error_text">#FF5252</color>
+
+    <!-- ═══════════════════════════════════
+         SEMANTIC COLORS
+    ═══════════════════════════════════ -->
+    <color name="color_success">#00E676</color>
+    <color name="color_warning">#FFB300</color>
+    <color name="color_error">#FF5252</color>
+    <color name="color_info">#00D4FF</color>
+
+    <color name="color_warning_bg">#1AFFB300</color>
+    <color name="color_warning_text">#FFB300</color>
+
+    <!-- ═══════════════════════════════════
+         CHAT BUBBLE COLORS
+    ═══════════════════════════════════ -->
+    <color name="bubble_user_bg">#1A4D6E</color>
+    <color name="bubble_user_border">#00D4FF</color>
+    <color name="bubble_assistant_bg">#141E2E</color>
+    <color name="bubble_assistant_border">#2D3748</color>
+
+    <!-- ═══════════════════════════════════
+         ORB COLORS
+    ═══════════════════════════════════ -->
+    <color name="orb_center">#00D4FF</color>
+    <color name="orb_glow">#2600D4FF</color>
+    <color name="orb_ring">#3300D4FF</color>
+
+    <!-- ═══════════════════════════════════
+         VOICE STATES
+    ═══════════════════════════════════ -->
+    <color name="color_voice_active">#CC00D4FF</color>
+    <color name="color_voice_idle">#881A3A5C</color>
+
+    <!-- ═══════════════════════════════════
+         ROUTINE COLORS
+    ═══════════════════════════════════ -->
+    <color name="routine_gaming">#FF4444</color>
+    <color name="routine_study">#4CAF50</color>
+    <color name="routine_sleep">#7B61FF</color>
+    <color name="routine_morning">#FF9800</color>
+    <color name="routine_work">#00D4FF</color>
+
+    <!-- ═══════════════════════════════════
+         BOTTOM NAV
+    ═══════════════════════════════════ -->
+    <color name="nav_selected">#00D4FF</color>
+    <color name="nav_unselected">#4A5568</color>
+
+    <!-- ═══════════════════════════════════
+         DIVIDERS & BORDERS
+    ═══════════════════════════════════ -->
+    <color name="divider">#1E2D42</color>
+    <color name="border_subtle">#2D3748</color>
+
+    <!-- ═══════════════════════════════════
+         STATUS BAR
+    ═══════════════════════════════════ -->
+    <color name="status_bar_color">#080C14</color>
+
+</resources>

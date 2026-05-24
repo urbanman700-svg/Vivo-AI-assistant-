@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Internal app files (screenshots, exports) -->
+    <files-path
+        name="internal_files"
+        path="." />
+
+    <!-- External cache (temporary screenshot sharing) -->
+    <external-cache-path
+        name="external_cache"
+        path="." />
+
+    <!-- App-specific external storage -->
+    <external-files-path
+        name="external_files"
+        path="." />
+
+    <!-- Cache dir -->
+    <cache-path
+        name="cache"
+        path="." />
+
+</paths>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- hero_orb_glow.xml — Ambient glow for dashboard hero section -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:type="radial"
+        android:gradientRadius="50%"
+        android:startColor="#1A00D4FF"
+        android:centerColor="#0A007799"
+        android:endColor="#00000000" />
+    <size android:width="200dp" android:height="200dp" />
+</shape>

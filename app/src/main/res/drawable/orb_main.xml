@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer glow ring -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#1A00D4FF" />
+            <size android:width="56dp" android:height="56dp" />
+        </shape>
+    </item>
+
+    <!-- Border ring (neon cyan) -->
+    <item
+        android:top="3dp"
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp">
+        <shape android:shape="oval">
+            <stroke
+                android:width="1.5dp"
+                android:color="#5500D4FF" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- Main orb body -->
+    <item
+        android:top="5dp"
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="100%"
+                android:centerX="0.35"
+                android:centerY="0.35"
+                android:startColor="#CC00D4FF"
+                android:centerColor="#880099BB"
+                android:endColor="#CC050A12" />
+        </shape>
+    </item>
+
+</layer-list>

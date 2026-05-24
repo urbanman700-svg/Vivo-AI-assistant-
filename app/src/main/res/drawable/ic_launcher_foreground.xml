@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background circle glow -->
+    <path
+        android:fillColor="#1A00D4FF"
+        android:pathData="M54,54 m-45,0 a45,45 0 1,0 90,0 a45,45 0 1,0 -90,0" />
+
+    <!-- Outer ring -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="3"
+        android:pathData="M54,54 m-32,0 a32,32 0 1,0 64,0 a32,32 0 1,0 -64,0" />
+
+    <!-- Inner orb body -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M54,54 m-18,0 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0" />
+
+    <!-- Center highlight -->
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M47,47 m-6,0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0" />
+
+    <!-- Orbital dashes -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#6600D4FF"
+        android:strokeWidth="2"
+        android:strokeDashArray="4,6"
+        android:pathData="M54,54 m-38,0 a38,38 0 1,0 76,0 a38,38 0 1,0 -76,0" />
+
+</vector>
