@@ -7,12 +7,15 @@ plugins {
 
 android {
     namespace "com.codexkd.vivoassistant"
-    compileSdk 33   // CI-safe (was 34)
+
+    // ✅ FIX: must be 34 for Room/SQLite/AndroidX latest deps
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.codexkd.vivoassistant"
         minSdk 26
-        targetSdk 33   // CI-safe (was 34)
+        targetSdk 34
+
         versionCode 1
         versionName "1.0.0"
         multiDexEnabled true
@@ -46,6 +49,7 @@ android {
             applicationIdSuffix ".debug"
             versionNameSuffix "-debug"
         }
+
         release {
             minifyEnabled true
             shrinkResources true
@@ -107,7 +111,7 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:6.3.0'
 
-    // ✅ FIXED GLIDE
+    // Glide FIXED
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     kapt 'com.github.bumptech.glide:compiler:4.16.0'
 
